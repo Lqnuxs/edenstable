@@ -27,8 +27,15 @@
 
 .menu-category h2 {
   font-size: 36px;
-  margin-bottom: 20px;
+  margin: 20px;
   text-align: center;
+}
+
+.menu-category h3 {
+  padding: 30px;
+  text-align: center;
+  font-style: italic;
+  font-weight: bold;
 }
 
 .menu-category h4 {
@@ -115,11 +122,13 @@
 }
 
 /* Special Item */
-#the-serpents-curry {
+#the-serpents-curry, #heavenly-honey-cake, #edens-bloom-fritters {
   scroll-margin-top: 120px; 
 }
 
-#the-serpents-curry:target {
+#the-serpents-curry:target,
+#heavenly-honey-cake:target, 
+#edens-bloom-fritters:target {
   animation: popOut 3s ease;
 }
 

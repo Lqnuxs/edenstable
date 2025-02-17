@@ -89,7 +89,7 @@
 }
 
 .special-info h3 {
-  font-size: 24px;
+  font-size: 36px;
   margin-bottom: 10px;
 }
 
@@ -150,18 +150,17 @@
 }
 
 .carousel-item .special-info .button {
-  background-color: #609011;
+  background: #609011;
   color: #FFF;
   padding: 8px 16px;
   text-decoration: none;
   border-radius: 4px;
-  font-weight: bold;
   box-shadow:2px 2px 10px rgba(70,69,69,0.5);
-  transition: background-color .3s ease;
+  transition: background .3s ease;
 }
 
 .carouel-item .special-info .button:hover{
-  background-color: #76b315;
+  background: #76b315;
 }
 
 
@@ -232,17 +231,21 @@
   .carousel-container {
     height: 100%; /* Adjust if you have a fixed height */
   }
-  .special-info h3 {
-    font-size: 18px;
+  .carousel-item .special-info h3 {
+    font-size: 16px;
     margin-bottom: 5px;
   }
-  .special-info p {
-    font-size: 12px;
+  .carousel-item .special-info p {
+    font-size: 10px;
     margin-bottom: 15px;
     color: #FFF;
   }
   .button {
-    padding: 6px 10px;
+    padding: 10px 15px;
+  }
+  .carousel-item .special-info .button {
+    font-size: 12px;
+    padding: 9px 9px;
   }
 }
 
