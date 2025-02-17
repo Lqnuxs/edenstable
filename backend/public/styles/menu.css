@@ -1,0 +1,136 @@
+/* Menu Page */
+.menu-page .menu-header {
+  text-align: center;
+  padding: 60px 20px;
+  background: #f7f7f7;
+  animation: fadeIn 1s ease-in-out;
+}
+
+.menu-page .menu-header h1 {
+  font-size: 48px;
+  margin-bottom: 10px;
+}
+
+.menu-page .menu-header p {
+  font-size: 20px;
+  color: #666;
+}
+
+.menu-items {
+  padding: 40px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+  animation: fadeIn 1s ease-in-out;
+  background: linear-gradient(180deg, #ffffff, #e7eee8);
+}
+
+.menu-category h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.menu-category h4 {
+  padding-bottom: 30px;
+  text-align: center;
+  font-style: italic;
+  font-weight: normal;
+}
+
+.menu-list {
+  display: grid;
+  gap: 20px;
+}
+
+@media (max-width: 767px) {
+  .menu-list {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (min-width: 768px) {
+  .menu-list {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.menu-item {
+  background: #fff;
+  border: 1px solid #37d478;
+  border-radius: 8px;
+  padding: 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.menu-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.15);
+}
+
+.menu-item img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.item-info {
+  padding: 20px;
+}
+
+.item-info h3 {
+  font-size: 23px;
+  margin-bottom: 10px;
+  color: #333;
+  font-weight: 700;
+}
+
+.item-info p {
+  font-size: 16px;
+  margin-bottom: 15px;
+  color: #555;
+  font-style: italic;
+}
+
+.item-price {
+  font-size: 20px;
+  font-weight: bold;
+  color: #609011;
+  margin-bottom: 10px;
+}
+
+.add-to-cart {
+  background: transparent;
+  border: 2px solid #609011;
+  color: #609011;
+  padding: 8px 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+.add-to-cart:hover {
+  background: #76b315;
+  color: #fff;
+}
+
+/* Special Item */
+#the-serpents-curry {
+  scroll-margin-top: 120px; 
+}
+
+#the-serpents-curry:target {
+  animation: popOut 3s ease;
+}
+
+@keyframes popOut {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}

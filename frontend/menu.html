@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Eden's Table - Menu</title>
+    <link rel="stylesheet" href="/styles/layout.css" />
+    <link rel="stylesheet" href="/styles/navbar.css" />
+    <link rel="stylesheet" href="/styles/banner.css" />
+    <link rel="stylesheet" href="/styles/menu.css" />
+    <link rel="stylesheet" href="/styles/footer.css" />
+    <script type="module" src="/scripts/script.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <div class="logo-container">
+          <a href="/">
+            <!-- You may still have your logo image here -->
+            <img src="/assets/Eden’s Table.png" alt="Eden's Table Logo" />
+          </a>
+        </div>
+        <ul class="nav-links">
+          <li class="nav-item"><a href="menu.html">Menu</a></li>
+        <li class="nav-item"><a href="mission.html">Mission</a></li>
+          <li class="nav-item"><a href="contact.html">Contact</a></li>
+          <li class="nav-item"><a href="references.html">References</a></li>
+          <li class="nav-item">
+            <a href="cart.html">
+                <img src="/assets/cart.png" alt="Cart" class="cart-icon">
+            </a>
+        </li>
+        </ul>
+        <button class="menu-toggle" aria-label="Toggle navigation">
+          <span class="hamburger"></span>
+        </button>
+      </nav>
+    </header>
+
+<main>
+      <section class="section-main-banner" style="height: 80vh; ">
+        <div
+          class="main-banner-img"
+          style="background-image: url('assets/menu_banner.jpg');"
+        ></div>
+        <div class="main-banner-inner">
+          <div class="container">
+            <div class="box-default">
+              <h1 class="box-default-title">Our Menu</h1>
+              <div class="box-default-decor"></div>
+              <p class="box-default-text">
+                Discover our carefully curated selection of refined dishes, crafted
+          for a discerning palate.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Menu Items -->
+      <section class="menu-items">
+        <!-- Appetizers -->
+        <div class="menu-category">
+          <h2 id="appetizers">Appetizers</h2>
+          <div class="menu-list">
+            <div class="menu-item">
+              <div class="item-info">
+                <h3>Forbidden Fig & Walnut Bruschetta</h3>
+                <p>
+                  Grilled artisan bread topped with fig preserves, candied
+                  walnuts, and whipped goat cheese.
+                </p>
+                <div class="item-price">9</div>
+                <button
+                  class="add-to-cart"
+                  data-item-id="1"
+                  data-item-name="Forbidden Fig & Walnut Bruschetta"
+                  data-item-price="9"
+                >
+                  Add to Cart
+                </button>
+              </div>
+            </div>
+            <div class="menu-item">
+              <div class="item-info">
+                <h3>Serpent's Temptation Stuffed Mushrooms</h3>
+                <p>
+                  Baked cremini mushrooms filled with herbed ricotta, sun-dried
+                  tomatoes, and pine nuts.
+                </p>
+                <div class="item-price">10</div>
+                <button
+                  class="add-to-cart"
+                  data-item-id="2"
+                  data-item-name="Serpent's Temptation Stuffed Mushrooms"
+                  data-item-price="10"
+                >
+                  Add to Cart
+                </button>
+              </div>
+            </div>
+            <div class="menu-item">
+              <div class="item-info">
+                <h3>Tree of Life Platter</h3>
+                <p>
+                  A selection of hummus, baba ganoush, olives, grapes, and fresh
+                  pita.
+                </p>
+                <div class="item-price">14</div>
+                <button
+                  class="add-to-cart"
+                  data-item-id="3"
+                  data-item-name="Tree of Life Platter"
+                  data-item-price="14"
+                >
+                  Add to Cart
+                </button>
+              </div>
+            </div>
+            <div class="menu-item">
+              <div class="item-info">
+                <h3>Heavenly Harvest Soup </h3>
+                <p>
+                  Velvety butternut squash soup infused with apples, cinnamon, and coconut cream.
+                </p>
+                <div class="item-price">8</div>
+                <button
+                  class="add-to-cart"
+                  data-item-id="4"
+                  data-item-name="Heavenly Harvest Soup"
+                  data-item-price="8"
+                >
+                  Add to Cart
+                </button>
+              </div>
+            </div>
+            <!-- Add more appetizer items here; they will wrap into rows of three -->
+            <div class="menu-item">
+              <div class="item-info">
+                <h3>Eden's Bloom Fritters</h3>
+                <p>
+                  Crispy zucchini and squash blossoms stuffed with ricotta, served with basil aioli.
+                </p>
+                <div class="item-price">8</div>
+                <button
+                  class="add-to-cart"
+                  data-item-id="5"
+                  data-item-name="Eden's Bloom Fritters"
+                  data-item-price="8"
+                >
+                  Add to Cart
+                </button>
+              </div>
+            </div>
+            <div class="menu-item">
+              <div class="item-info">
+                <h3>Angel's Wings Cauliflower</h3>
+                <p>
+                  Tempura-fried cauliflower bites tossed in a sweet and spicy pomegranate glaze.
+                </p>
+                <div class="item-price">10</div>
+                <button
+                  class="add-to-cart"
+                  data-item-id="6"
+                  data-item-name="Angel's Wings Cauliflower"
+                  data-item-price="10"
+                >
+                  Add to Cart
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Entrees -->
+        <div class="menu-category">
+          <h2 id="main-courses">Main Courses</h2>
+          <div class="menu-list">
+            <div class="menu-item">
+              <div class="item-info">
+                <h3>Adam's Earthly Delight</h3>
+                <p>
+                  Roasted portobello mushrooms stuffed with quinoa, spinach, and caramelized onions, served with a balsamic glaze.
+                </p>
+                <div class="item-price">18</div>
+                <button
+                  class="add-to-cart"
+                  data-item-id="7"
+                  data-item-name="Adam's Earthly Delight"
+                  data-item-price="18"
+                >
+                  Add to Cart
+                </button>
+              </div>
+            </div>
+            <div class="menu-item">
+              <div class="item-info">
+                <h3>Eve's Temptation Tart</h3>
+                <p>
+                  Flaky puff pastry filled with heirloom tomatoes, basil, and cashew ricotta.
+                </p>
+                <div class="item-price">17</div>
+                <button
+                  class="add-to-cart"
+                  data-item-id="8"
+                  data-item-name="Eve's Temptation Tart"
+                  data-item-price="17"
+                >
+                  Add to Cart
+                </button>
+              </div>
+            </div>
+            <div class="menu-item" id="the-serpents-curry">
+              <div class="item-info">
+                <h3>The Serpent's Curry</h3>
+                <p>
+                  Fragrant coconut and chickpea curry with sweet potatoes, carrots, and kale, served with jasmine rice.
+                </p>
+                <div class="item-price">16</div>
+                <button
+                  class="add-to-cart"
+                  data-item-id="9"
+                  data-item-name="The Serpent's Curry"
+                  data-item-price="16"
+                >
+                  Add to Cart
+                </button>
+              </div>
+            </div>
+            <div class="menu-item">
+              <div class="item-info">
+                <h3>Angel's Harvest Risotto</h3>
+                <p>
+                  Creamy wild mushroom and truffle risotto with a sprinkle of toasted almonds.
+                </p>
+                <div class="item-price">19</div>
+                <button
+                  class="add-to-cart"
+                  data-item-id="10"
+                  data-item-name="Angel's Harvest Risotto"
+                  data-item-price="19"
+                >
+                  Add to Cart
+                </button>
+              </div>
+            </div>
+            <div class="menu-item">
+              <div class="item-info">
+                <h3>Paradise Platter</h3>
+                <p>
+                  A sampler of grilled halloumi, roasted eggplant, honey-glazed carrots, and spiced lentils.
+                </p>
+                <div class="item-price">22</div>
+                <button
+                  class="add-to-cart"
+                  data-item-id="11"
+                  data-item-name="Paradise Platter"
+                  data-item-price="22"
+                >
+                  Add to Cart
+                </button>
+              </div>
+            </div>
+            <div class="menu-item">
+              <div class="item-info">
+                <h3>Celestial Eggplant Parmesan</h3>
+                <p>
+                  Layers of crispy eggplant, house-made marinara, and cashew mozzarella, served over spaghetti squash.
+                </p>
+                <div class="item-price">17</div>
+                <button
+                  class="add-to-cart"
+                  data-item-id="12"
+                  data-item-name="Celestial Eggplant Parmesan"
+                  data-item-price="17"
+                >
+                  Add to Cart
+                </button>
+              </div>
+            </div>
+            <div class="menu-item">
+              <div class="item-info">
+                <h3>The Garden's Bounty</h3>
+                <p>
+                  Lentil and walnut-stuffed bell peppers served over saffron-infused couscous.
+                </p>
+                <div class="item-price">18</div>
+                <button
+                  class="add-to-cart"
+                  data-item-id="13"
+                  data-item-name="The Garden's Bounty"
+                  data-item-price="18"
+                >
+                  Add to Cart
+                </button>
+              </div>
+            </div>
+            <div class="menu-item">
+              <div class="item-info">
+                <h3>Heaven's Gate Lasagna</h3>
+                <p>
+                  Spinach and ricotta lasagna with roasted red pepper sauce and a cashew béchamel.
+                </p>
+                <div class="item-price">20</div>
+                <button
+                  class="add-to-cart"
+                  data-item-id="14"
+                  data-item-name="Heaven's Gate Lasagna"
+                  data-item-price="20"
+                >
+                  Add to Cart
+                </button>
+              </div>
+            </div>
+            <div class="menu-item">
+              <div class="item-info">
+                <h3>Genesis Grain Bowl</h3>
+                <p>
+                  Farro, roasted sweet potatoes, avocado, marinated tempeh, and tahini dressing.
+                </p>
+                <div class="item-price">16</div>
+                <button
+                  class="add-to-cart"
+                  data-item-id="15"
+                  data-item-name="Genesis Grain Bowl"
+                  data-item-price="16"
+                >
+                  Add to Cart
+                </button>
+              </div>
+            </div>
+            <div class="menu-item">
+              <div class="item-info">
+                <h3>Pearl of Eden Gnocchi</h3>
+                <p>
+                  Handmade sweet potato gnocchi tossed in sage butter with crispy pecans.
+                </p>
+                <div class="item-price">19</div>
+                <button
+                  class="add-to-cart"
+                  data-item-id="16"
+                  data-item-name="Pearl of Eden Gnocchi"
+                  data-item-price="19"
+                >
+                  Add to Cart
+                </button>
+              </div>
+            </div>
+            <div class="menu-item">
+              <div class="item-info">
+                <h3>Eden's Tofu Steak</h3>
+                <p>
+                  Grilled marinated tofu over garlic mashed potatoes with a wild mushroom demi-glace.
+                </p>
+                <div class="item-price">21</div>
+                <button
+                  class="add-to-cart"
+                  data-item-id="17"
+                  data-item-name="Eden's Tofu Steak"
+                  data-item-price="21"
+                >
+                  Add to Cart
+                </button>
+              </div>
+            </div>
+            <div class="menu-item">
+              <div class="item-info">
+                <h3>Noah's Rainbow Stir-Fry</h3>
+                <p>
+                  A colorful mix of bell peppers, carrots, peas, and tofu tossed in a ginger soy glaze, served with coconut rice.
+                </p>
+                <div class="item-price">15</div>
+                <button
+                  class="add-to-cart"
+                  data-item-id="18"
+                  data-item-name="Noah's Rainbow Stir-Fry"
+                  data-item-price="15"
+                >
+                  Add to Cart
+                </button>
+              </div>
+            </div>
+            <!-- More main course items as desired -->
+          </div>
+        </div>
+
+        <!-- Desserts -->
+        <div class="menu-category">
+          <h2 id="desserts">Desserts</h2>
+          <div class="menu-list">
+            <div class="menu-item">
+              <div class="item-info">
+                <h3>Forbidden Fruit Tart</h3>
+                <p>
+                  Almond crust filled with spiced apple and pear compote, topped with a drizzle of caramel.
+                </p>
+                <div class="item-price">9</div>
+                <button
+                  class="add-to-cart"
+                  data-item-id="19"
+                  data-item-name="Forbidden Fruit Tart"
+                  data-item-price="9"
+                >
+                  Add to Cart
+                </button>
+              </div>
+            </div>
+            <div class="menu-item">
+              <div class="item-info">
+                <h3>Serpent's Chocolate Delight</h3>
+                <p>
+                  Dark chocolate mousse with cinnamon, served with a raspberry coulis.
+                </p>
+                <div class="item-price">10</div>
+                <button
+                  class="add-to-cart"
+                  data-item-id="20"
+                  data-item-name="Serpent's Chocolate Delight"
+                  data-item-price="10"
+                >
+                  Add to Cart
+                </button>
+              </div>
+            </div>
+            <div class="menu-item">
+              <div class="item-info">
+                <h3>Heavenly Honey Cake</h3>
+                <p>
+                  A light and fluffy honey-infused cake with a lemon glaze and crushed pistachios.
+                </p>
+                <div class="item-price">30</div>
+                <button
+                  class="add-to-cart"
+                  data-item-id="21"
+                  data-item-name="Heavenly Honey Cake"
+                  data-item-price="30"
+                >
+                  Add to Cart
+                </button>
+              </div>
+            </div>
+            <div class="menu-item">
+              <div class="item-info">
+                <h3>Eve's Apple Defiance</h3>
+                <p>
+                  A warm spiced apple tart with almond crust, drizzled honey, topped with toasted pecans and coconut cream.
+                </p>
+                <div class="item-price">12</div>
+                <button
+                  class="add-to-cart"
+                  data-item-id="22"
+                  data-item-name="Eve's Apple Defiance"
+                  data-item-price="12"
+                >
+                  Add to Cart
+                </button>
+              </div>
+            </div>
+            <!-- Additional dessert items -->
+          </div>
+        </div>
+
+        <!-- Drinks -->
+        <div class="menu-category">
+          <h2 id="desserts">Drinks</h2>
+          <h4>Full sized alcoholic beverages must be bought in-person</h4>
+          <div class="menu-list">
+            <div class="menu-item">
+              <div class="item-info">
+                <h3>Forbidden Fruit Tart</h3>
+                <p>
+                  Almond crust filled with spiced apple and pear compote, topped with a drizzle of caramel.
+                </p>
+                <div class="item-price">9</div>
+                <button
+                  class="add-to-cart"
+                  data-item-id="109"
+                  data-item-name="Forbidden Fruit Tart"
+                  data-item-price="23"
+                >
+                  Add to Cart
+                </button>
+              </div>
+            </div>
+            <div class="menu-item">
+              <div class="item-info">
+                <h3>Serpent's Chocolate Delight</h3>
+                <p>
+                  Dark chocolate mousse with cinnamon, served with a raspberry coulis.
+                </p>
+                <div class="item-price">10</div>
+                <button
+                  class="add-to-cart"
+                  data-item-id="20"
+                  data-item-name="Serpent's Chocolate Delight"
+                  data-item-price="10"
+                >
+                  Add to Cart
+                </button>
+              </div>
+            </div>
+            <div class="menu-item">
+              <div class="item-info">
+                <h3>Heavenly Honey Cake</h3>
+                <p>
+                  A light and fluffy honey-infused cake with a lemon glaze and crushed pistachios.
+                </p>
+                <div class="item-price">30</div>
+                <button
+                  class="add-to-cart"
+                  data-item-id="21"
+                  data-item-name="Heavenly Honey Cake"
+                  data-item-price="30"
+                >
+                  Add to Cart
+                </button>
+              </div>
+            </div>
+            <div class="menu-item">
+              <div class="item-info">
+                <h3>Eve's Apple Defiance</h3>
+                <p>
+                  A warm spiced apple tart with almond crust, drizzled honey, topped with toasted pecans and coconut cream.
+                </p>
+                <div class="item-price">12</div>
+                <button
+                  class="add-to-cart"
+                  data-item-id="22"
+                  data-item-name="Eve's Apple Defiance"
+                  data-item-price="12"
+                >
+                  Add to Cart
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>© 2025 Green Bites. All rights reserved.</p>
+    </footer>
+
+  </body>
+</html>

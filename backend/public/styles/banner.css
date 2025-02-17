@@ -1,0 +1,67 @@
+/* Main Banner Section */
+.section-main-banner {
+  position: relative;
+  background: #232323;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.main-banner-img {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  opacity: 0.4;
+  background-size: cover;
+  background-position: center;
+  animation: banner-img 10s infinite;
+}
+
+.main-banner-inner {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  max-width: 80%;
+  color: #fff;
+}
+
+@keyframes banner-img {
+  0% {
+    transform: translate3d(0,0,0) rotate(0deg);
+  }
+  50% {
+    transform: translate3d(0,0,0) rotate(1deg) scale(1.02);
+  }
+  100% {
+    transform: translate3d(0,0,0) rotate(0deg);
+  }
+}
+
+.box-default {
+  padding: 30px;
+  border-radius: 8px;
+  text-align: center;
+  max-width: 80%;
+  margin: auto;
+  animation: fadeIn 1.5s ease-in-out;
+}
+
+.box-default-title {
+  font-size: 60px;
+  text-shadow: 0 4px 12px rgba(0,0,0,0.3);
+  margin-bottom: 10px;
+}
+
+.box-default-decor {
+  width: 100px;
+  border-top: 3px solid #fff;
+  margin: 20px auto;
+}
+
+.box-default-text {
+  font-size: 25px;
+}

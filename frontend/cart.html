@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Eden's Table - Cart</title>
+    <link rel="stylesheet" href="/styles/layout.css" />
+    <link rel="stylesheet" href="/styles/navbar.css" />
+    <link rel="stylesheet" href="/styles/cart.css" />
+    <link rel="stylesheet" href="/styles/footer.css" />
+    <script type="module" src="/scripts/script.js" defer></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <div class="logo-container">
+          <a href="/">
+            <img src="/assets/Eden’s Table.png" alt="Eden's Table Logo" />
+          </a>
+        </div>
+        <ul class="nav-links">
+          <li class="nav-item"><a href="menu.html">Menu</a></li>
+          <li class="nav-item"><a href="mission.html">Mission</a></li>
+          <li class="nav-item"><a href="contact.html">Contact</a></li>
+          <li class="nav-item"><a href="references.html">References</a></li>
+          <li class="nav-item">
+            <a href="cart.html">
+              <img src="/assets/cart.png" alt="Cart" class="cart-icon" />
+            </a>
+          </li>
+        </ul>
+        <button class="menu-toggle" aria-label="Toggle navigation">
+          <span class="hamburger"></span>
+        </button>
+      </nav>
+    </header>
+
+    <main class="cart-page">
+      <section class="cart-header">
+        <h1>Your Shopping Cart</h1>
+      </section>
+
+      <div class="cart-wrapper">
+        <!-- Left side: Cart items & coupon code -->
+        <section class="cart-left">
+          <!-- Cart Table -->
+          <table class="cart-table">
+            <thead>
+              <tr>
+                <th class="product-column">Product</th>
+                <th>Price</th>
+                <th>Qty</th>
+                <th>Subtotal</th>
+              </tr>
+            </thead>
+            <tbody id="cart-items"></tbody>
+          </table>
+
+          <div class="coupon-continue">
+            <form class="coupon-form" id="coupon-form">
+              <label for="coupon">Promotion Code</label>
+              <input type="text" id="coupon" placeholder="Coupon code" />
+              <button
+                type="submit"
+                onclick="showNotification('Implemented In The Future')"
+              >
+                Apply Coupon
+              </button>
+            </form>
+            <button
+              class="continue-shopping"
+              onclick="location.href='menu.html'"
+            >
+              Continue Shopping
+            </button>
+          </div>
+        </section>
+
+        <!-- Right side: Order Summary -->
+        <section class="cart-right">
+          <h3>Summary</h3>
+          <div class="summary-item">
+            <span>Subtotal</span>
+            <span id="subtotal">$0.00</span>
+          </div>
+          <div class="summary-item">
+            <span>Tax</span>
+            <span id="tax">$0.00</span>
+          </div>
+          <div class="summary-item total">
+            <span>Total</span>
+            <span id="total-cost">$0.00</span>
+          </div>
+          <button
+            class="checkout-button"
+            onclick="showNotification('Implemented In The Future')"
+          >
+            Proceed to Checkout
+          </button>
+        </section>
+      </div>
+    </main>
+
+    <!-- ========== Footer ========== -->
+    <footer class="footer">
+      <p>© 2025 Eden's Table. All rights reserved.</p>
+    </footer>
+  </body>
+</html>

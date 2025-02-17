@@ -1,0 +1,231 @@
+
+  
+  /* Hero Section */
+  .hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 80px 20px;
+    background: url("https://source.unsplash.com/1600x900/?vegetables,green") no-repeat center center/cover;
+    text-align: center;
+    animation: fadeIn 1.5s ease-in-out;
+  }
+  
+  .hero-content h2 {
+    font-size: 48px;
+    margin-bottom: 20px;
+  }
+  
+  .hero-content p {
+    font-size: 20px;
+    margin-bottom: 30px;
+  }
+  
+  /* Button Styles */
+  .button {
+    background: #609011;
+    color: #fff;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    text-decoration: none;
+  }
+  
+  .button:hover {
+    background: #76b315;
+  }
+  
+  /* Specials */
+  .specials {
+    padding: 60px 20px;
+    background: linear-gradient(180deg, #ffffff, #e7eee8);
+    text-align: center;
+    animation: fadeIn 1s ease-in-out;
+  }
+  
+  .specials h2 {
+    font-size: 42px;
+    margin-bottom: 40px;
+  }
+  
+  .specials-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+  }
+  
+  .special-item {
+    background: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    width: 300px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .special-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 14px rgba(0,0,0,0.15);
+  }
+  
+  .special-item img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+  
+  .special-info {
+    padding: 10px;
+  }
+  
+  .special-info h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .special-info p {
+    font-size: 16px;
+    margin-bottom: 15px;
+    color: #555;
+  }
+  
+  /* Carousel */
+  .carousel-container {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+
+  @media (max-width: 768px) {
+    .carousel-container {
+      /* If using fixed height, reduce the height on mobile */
+      height: 100%; /* adjust as needed */
+      /* If using aspect-ratio, this may not be necessary */
+    }
+    .special-info h3 {
+      font-size: 18px;
+      margin-bottom: 5px;
+    }
+    .special-info p {
+      font-size: 12px;
+      margin-bottom: 15px;
+      color: #555;
+    }
+    .button{
+      padding:6px 10px;
+    }
+  }
+  
+  
+  .carousel-track {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+  }
+  
+  
+  .carousel-item {
+    min-width: 100%;
+    box-sizing: border-box;
+    padding: 10px;
+    text-align: center;
+  }
+
+  
+  
+  .carousel-item img {
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  }
+  
+  .carousel-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0,0,0,0.5);
+    color: #fff;
+    border: none;
+    font-size: 24px;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 50%;
+  }
+  
+  .prev-btn {
+    left: 10px;
+  }
+  
+  .next-btn {
+    right: 10px;
+  }
+  
+  .carousel-btn:hover {
+    background: rgba(0,0,0,0.8);
+  }
+  
+  /* Reviews */
+  .reviews-section {
+    padding: 80px 20px;
+    background: linear-gradient(180deg, #e7eee8, #fff);
+    text-align: center;
+    animation: fadeIn 1s ease-in-out;
+  }
+  
+  .reviews-section h2 {
+    font-size: 42px;
+    margin-bottom: 40px;
+  }
+  
+  .reviews-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+  }
+  
+  .review-card {
+    background: #f7f7f7;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    padding: 30px;
+    width: 300px;
+    text-align: left;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .review-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 14px rgba(0,0,0,0.15);
+  }
+  
+  .review-text {
+    font-size: 18px;
+    font-style: italic;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  .reviewer-info {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+  }
+  
+  .reviewer-info img {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    border-radius: 50%;
+  }
+  
+  .reviewer-name {
+    font-size: 18px;
+  }
+  
