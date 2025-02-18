@@ -56,6 +56,12 @@
   animation: fadeIn 1.5s ease-in-out;
 }
 
+@media (max-width: 768px) {
+  .box-default {
+    max-width:100%;
+  }
+}
+
 .box-default-title {
   font-size: 60px;
   text-shadow: 0 4px 12px rgba(0,0,0,0.3);
