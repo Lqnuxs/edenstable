@@ -1,6 +1,7 @@
 .cart-page {
   padding: 80px 20px;
   animation: fadeIn 1s ease-in-out;
+  background: linear-gradient(180deg, #ffffff, #e7eee8);
 }
 
 .cart-header {
@@ -228,8 +229,9 @@
 }
 
 .cart-item-name {
-  font-weight: normal;
+  font-weight: bold;
   font-size: 16px;
+  color: #609011;
 }
 
 @media (max-width: 768px) {
@@ -265,7 +267,6 @@
   }
 
   .cart-item-name {
-      font-weight: bold;
       font-size: 18px;
     }
   .cart-table td::before {

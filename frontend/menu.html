@@ -20,26 +20,37 @@
   <body>
     <header>
       <nav class="navbar">
+        <!-- Left side: Home button -->
+        <div class="nav-left">
+          <a href="/" class="home-link">Home</a>
+        </div>
+    
+        <!-- Center: Logo -->
         <div class="logo-container">
           <a href="/">
-            <!-- You may still have your logo image here -->
             <img src="/assets/Eden’s Table.png" alt="Eden's Table Logo" />
           </a>
         </div>
+    
+        <!-- Right side: Cart + Hamburger -->
+        <div class="nav-right">
+          <!-- Cart -->
+          <a href="cart.html" class="cart-container">
+            <img src="/assets/cart.png" alt="Cart" class="cart-icon" />
+          </a>
+          <!-- Hamburger Button -->
+          <button class="menu-toggle" aria-label="Toggle navigation">
+            <span class="hamburger"></span>
+          </button>
+        </div>
+    
+        <!-- The nav links (hidden by default, shown on toggle) -->
         <ul class="nav-links">
           <li class="nav-item"><a href="menu.html">Menu</a></li>
           <li class="nav-item"><a href="mission.html">Mission</a></li>
           <li class="nav-item"><a href="contact.html">Contact</a></li>
           <li class="nav-item"><a href="references.html">References</a></li>
-          <li class="nav-item">
-            <a href="cart.html">
-              <img src="/assets/cart.png" alt="Cart" class="cart-icon" />
-            </a>
-          </li>
         </ul>
-        <button class="menu-toggle" aria-label="Toggle navigation">
-          <span class="hamburger"></span>
-        </button>
       </nav>
     </header>
 
@@ -407,7 +418,7 @@
         <!-- Desserts -->
         <div class="menu-category">
           <h2 id="desserts">Desserts</h2>
-          <h4>Full sized desserts must be bought in-person</h4>
+          <h4>Full sized desserts must be bought in-person.</h4>
           <div class="menu-list">
             <div class="menu-item">
               <div class="item-info">
@@ -487,9 +498,9 @@
         <!-- Drinks -->
         <div class="menu-category">
           <h2 id="drinks">Drinks</h2>
-
+          <h4>Full sized bottles must be bought in-person.</h4>
           <!-- Classic Drinks: Nectar of the Gods -->
-          <h3>Classic Drinks: Nectar of the Gods</h3>
+          <h3 class="drink-category">Classic Drinks: Nectar of the Gods</h3>
           <div class="menu-list">
             <div class="menu-item">
               <div class="item-info">
@@ -615,7 +626,7 @@
           </div>
 
           <!-- Eden’s Cocktail Selection: Heavenly Cocktails -->
-          <h3>Eden’s Cocktail Selection: Heavenly Cocktails</h3>
+          <h3 class="drink-category">Eden’s Cocktail Selection: Heavenly Cocktails</h3>
           <div class="menu-list">
             <div class="menu-item">
               <div class="item-info">
@@ -750,7 +761,7 @@
           </div>
 
           <!-- Signature Wines & Mead -->
-          <h3>Signature Wines & Mead</h3>
+          <h3 class="drink-category">Signature Wines & Mead</h3>
           <div class="menu-list">
             <div class="menu-item">
               <div class="item-info">
@@ -819,7 +830,7 @@
           </div>
 
           <!-- Heavenly Spirits & Nightcaps -->
-          <h3>Heavenly Spirits & Nightcaps</h3>
+          <h3 class="drink-category">Heavenly Spirits & Nightcaps</h3>
           <div class="menu-list">
             <div class="menu-item">
               <div class="item-info">

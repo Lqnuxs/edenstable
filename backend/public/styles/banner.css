@@ -29,6 +29,12 @@
   color: #fff;
 }
 
+@media (max-width: 768px) {
+  .main-banner-inner{
+    max-width: 100%;
+  }
+}
+
 @keyframes banner-img {
   0% {
     transform: translate3d(0,0,0) rotate(0deg);

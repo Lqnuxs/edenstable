@@ -20,25 +20,37 @@
   <body>
     <header>
       <nav class="navbar">
+        <!-- Left side: Home button -->
+        <div class="nav-left">
+          <a href="/" class="home-link">Home</a>
+        </div>
+
+        <!-- Center: Logo -->
         <div class="logo-container">
           <a href="/">
             <img src="/assets/Eden’s Table.png" alt="Eden's Table Logo" />
           </a>
         </div>
+
+        <!-- Right side: Cart + Hamburger -->
+        <div class="nav-right">
+          <!-- Cart -->
+          <a href="cart.html" class="cart-container">
+            <img src="/assets/cart.png" alt="Cart" class="cart-icon" />
+          </a>
+          <!-- Hamburger Button -->
+          <button class="menu-toggle" aria-label="Toggle navigation">
+            <span class="hamburger"></span>
+          </button>
+        </div>
+
+        <!-- The nav links (hidden by default, shown on toggle) -->
         <ul class="nav-links">
           <li class="nav-item"><a href="menu.html">Menu</a></li>
           <li class="nav-item"><a href="mission.html">Mission</a></li>
           <li class="nav-item"><a href="contact.html">Contact</a></li>
           <li class="nav-item"><a href="references.html">References</a></li>
-          <li class="nav-item">
-            <a href="cart.html">
-              <img src="/assets/cart.png" alt="Cart" class="cart-icon" />
-            </a>
-          </li>
         </ul>
-        <button class="menu-toggle" aria-label="Toggle navigation">
-          <span class="hamburger"></span>
-        </button>
       </nav>
     </header>
 
@@ -67,12 +79,7 @@
             <form class="coupon-form" id="coupon-form">
               <label for="coupon">Promotion Code</label>
               <input type="text" id="coupon" placeholder="Coupon code" />
-              <button
-                type="submit"
-                onclick="showNotification('Implemented In The Future')"
-              >
-                Apply Coupon
-              </button>
+              <button type="submit">Apply Coupon</button>
             </form>
             <button
               class="continue-shopping"
@@ -84,11 +91,16 @@
         </section>
 
         <!-- Right side: Order Summary -->
+        <!-- Order Summary -->
         <section class="cart-right">
           <h3>Summary</h3>
           <div class="summary-item">
             <span>Subtotal</span>
             <span id="subtotal">$0.00</span>
+          </div>
+          <div class="summary-item">
+            <span>Discounts</span>
+            <span id="discount">$0.00</span>
           </div>
           <div class="summary-item">
             <span>Tax</span>
@@ -98,10 +110,7 @@
             <span>Total</span>
             <span id="total-cost">$0.00</span>
           </div>
-          <button
-            class="checkout-button"
-            onclick="showNotification('Implemented In The Future')"
-          >
+          <button class="checkout-button" id="checkout-button">
             Proceed to Checkout
           </button>
         </section>

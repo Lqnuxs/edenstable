@@ -2,14 +2,20 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>Eden's Table - Our Mission</title>
+
+    <!-- Existing styles -->
     <link rel="stylesheet" href="/styles/layout.css" />
     <link rel="stylesheet" href="/styles/navbar.css" />
     <link rel="stylesheet" href="/styles/banner.css" />
     <link rel="stylesheet" href="/styles/mission.css" />
     <link rel="stylesheet" href="/styles/footer.css" />
+
+    <!-- Scripts -->
     <script type="module" src="/scripts/script.js" defer></script>
+
+    <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -20,43 +26,55 @@
   <body>
     <header>
       <nav class="navbar">
+        <!-- Left side: Home button -->
+        <div class="nav-left">
+          <a href="/" class="home-link">Home</a>
+        </div>
+    
+        <!-- Center: Logo -->
         <div class="logo-container">
           <a href="/">
             <img src="/assets/Eden’s Table.png" alt="Eden's Table Logo" />
           </a>
         </div>
+    
+        <!-- Right side: Cart + Hamburger -->
+        <div class="nav-right">
+          <!-- Cart -->
+          <a href="cart.html" class="cart-container">
+            <img src="/assets/cart.png" alt="Cart" class="cart-icon" />
+          </a>
+          <!-- Hamburger Button -->
+          <button class="menu-toggle" aria-label="Toggle navigation">
+            <span class="hamburger"></span>
+          </button>
+        </div>
+    
+        <!-- The nav links (hidden by default, shown on toggle) -->
         <ul class="nav-links">
           <li class="nav-item"><a href="menu.html">Menu</a></li>
-        <li class="nav-item"><a href="mission.html">Mission</a></li>
+          <li class="nav-item"><a href="mission.html">Mission</a></li>
           <li class="nav-item"><a href="contact.html">Contact</a></li>
           <li class="nav-item"><a href="references.html">References</a></li>
-          <li class="nav-item">
-            <a href="cart.html">
-                <img src="/assets/cart.png" alt="Cart" class="cart-icon">
-            </a>
-        </li>
         </ul>
-        <button class="menu-toggle" aria-label="Toggle navigation">
-          <span class="hamburger"></span>
-        </button>
       </nav>
     </header>
 
     <main class="mission-page">
       <!-- Mission Banner Section -->
-      <section class="section-main-banner" style="height: 60vh">
+      <section class="section-main-banner" style="height: 60vh;">
         <div
           class="main-banner-img"
-          style="background-image: url('assets/mission_banner.jpg');"
+          style="background-image: url('/assets/mission_banner.jpg');"
         ></div>
         <div class="main-banner-inner">
           <div class="container">
             <div class="box-default">
-              <h1 class="box-default-title">Our Menu</h1>
+              <h1 class="box-default-title">Our Mission</h1>
               <div class="box-default-decor"></div>
               <p class="box-default-text">
-                Discover our carefully curated selection of refined dishes, crafted
-          for a discerning palate.
+                Discover our carefully curated selection of refined dishes,
+                crafted for a discerning palate.
               </p>
             </div>
           </div>
@@ -64,38 +82,69 @@
       </section>
 
       <!-- Mission Content Sections -->
-      <section class="mission-content">
-        <div class="mission-section">
+      <!-- Example of an alternating layout with image on the left, text on the right -->
+      <section class="alternating-section left-image fade-in">
+        <div class="image-container">
+          <!-- Replace with your own image -->
+          <img
+            src="/assets/our_story.jpg"
+            alt="Our Story"
+          />
+        </div>
+        <div class="text-container">
           <h2>Our Story</h2>
           <p>
-            Founded on the belief that food can bring people together and nurture both body and soul,
-Eden's Table was born out of a passion for quality, sustainability, and innovation. We combine
-traditional recipes with modern culinary techniques to create an experience that is both
-heartwarming and inspiring. As partners with the International Fund for Animal Welfare (IFAW),
-our commitment to giving back is not just for show. 5% of our restaurant’s profit every year is
-given to the IFAW. We are committed to contributing to a better world.
+            Founded on the belief that food can bring people together and nurture both body
+            and soul, Eden's Table was born out of a passion for quality, sustainability,
+            and innovation. We combine traditional recipes with modern culinary techniques
+            to create an experience that is both heartwarming and inspiring. As partners
+            with the International Fund for Animal Welfare (IFAW), our commitment to giving
+            back is not just for show. 5% of our restaurant's profit every year is given to
+            the IFAW. We are committed to contributing to a better world.
           </p>
         </div>
-        <div class="mission-section">
+      </section>
+
+      <!-- Next section reversed: text on the left, image on the right -->
+      <section class="alternating-section right-image fade-in">
+        <div class="text-container">
           <h2>Sustainability &amp; Community</h2>
           <p>
-            Our commitment extends beyond the plate. We source locally, embrace eco-friendly practices,
-and actively participate in community outreach—ensuring that our impact is as positive as the
-food we serve. Additionally, our farmers do not use harmful pesticides, hormones, or genetically
-modify any of the delicious produce that we source directly from them, and the produce comes
-straight from farm to table for maximum freshness.
-Our specialized chefs craft holistic, nutritious, and delicious meals that everyone can enjoy; at
-Eden’s Table, there is something for everyone. We are proud to call ourselves a vegetarian and
-halal restaurant, and since we have numerous vegan dishes, there is food for quite literally
-everyone.
+            Our commitment extends beyond the plate. We source locally, embrace eco-friendly
+            practices, and actively participate in community outreach—ensuring that our impact
+            is as positive as the food we serve. Additionally, our farmers do not use harmful
+            pesticides, hormones, or genetically modify any of the delicious produce that we
+            source directly from them. Our specialized chefs craft holistic, nutritious, and
+            delicious meals that everyone can enjoy; at Eden’s Table, there is something for
+            everyone. We are proud to call ourselves a vegetarian and halal restaurant, and
+            since we have numerous vegan dishes, there is food for quite literally everyone.
           </p>
         </div>
-        <div class="mission-section">
+        <div class="image-container">
+          <!-- Replace with your own image -->
+          <img
+            src="/assets/sustainability.jpg"
+            alt="Sustainability & Community"
+          />
+        </div>
+      </section>
+
+      <!-- Another section, image on the left, text on the right -->
+      <section class="alternating-section left-image fade-in">
+        <div class="image-container">
+          <!-- Replace with your own image -->
+          <img
+            src="/assets/our_vision.jpg"
+            alt="Our Vision for the Future"
+          />
+        </div>
+        <div class="text-container">
           <h2>Our Vision for the Future</h2>
           <p>
-            We strive to set new standards in the culinary world by continually innovating, supporting local
-producers, and promoting a healthier, greener way of living. Our vision is a future where
-delicious food and sustainability go hand in hand, and cruelty-free food is the norm.
+            We strive to set new standards in the culinary world by continually innovating,
+            supporting local producers, and promoting a healthier, greener way of living.
+            Our vision is a future where delicious food and sustainability go hand in hand,
+            and cruelty-free food is the norm.
           </p>
         </div>
       </section>
@@ -104,6 +153,5 @@ delicious food and sustainability go hand in hand, and cruelty-free food is the 
     <footer class="footer">
       <p>© 2025 Eden's Table. All rights reserved.</p>
     </footer>
-
   </body>
 </html>
