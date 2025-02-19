@@ -4,7 +4,7 @@ const cors = require("cors");
 const bodyParser = require("body-parser");
 
 const app = express();
-const PORT = 8000;
+const PORT = 8082;
 
 // Define directories
 const BASE_DIR = __dirname;
