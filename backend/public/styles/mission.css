@@ -1,25 +1,26 @@
-/* Mission Page Background */
 .mission-page {
   background: linear-gradient(180deg, #ffffff, #e7eee8);
 }
 
-/* Banner - Adjust if needed */
 .section-main-banner {
-  height: 60vh; /* or your preferred height */
+  height: 60vh;
 }
 
-/* Container fade-in animation */
 @keyframes fadeIn {
-  from { opacity: 0; transform: translateY(15px); }
-  to   { opacity: 1; transform: translateY(0); }
+  from {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
-/* For any elements you want to fade in */
 .fade-in {
   animation: fadeIn 1s ease-in-out;
 }
 
-/* Alternating Section Layout */
 .alternating-section {
   display: flex;
   align-items: center;
@@ -29,11 +30,10 @@
   padding: 20px;
 }
 
-/* Common container styling */
 .alternating-section .image-container,
 .alternating-section .text-container {
   flex: 1;
-  min-width: 0; /* helps prevent overflow issues */
+  min-width: 0;
 }
 
 .alternating-section img {
@@ -41,16 +41,15 @@
   height: auto;
   display: block;
   border-radius: 4px;
-  box-shadow: 0 6px 14px rgba(0,0,0,0.15);
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.15);
 }
 
-/* Headings and paragraphs in text container */
 .alternating-section .text-container h2 {
   font-size: 36px;
   margin-bottom: 20px;
   font-family: "Playfair Display", serif;
   text-align: center;
-  text-shadow: 0 6px 14px rgba(0,0,0,0.15);
+  text-shadow: 0 6px 14px rgba(0, 0, 0, 0.15);
 }
 
 .alternating-section .text-container p {
@@ -58,10 +57,9 @@
   line-height: 1.8;
   color: #444;
   text-align: center;
-  text-shadow: 0 6px 14px rgba(0,0,0,0.15);
+  text-shadow: 0 6px 14px rgba(0, 0, 0, 0.15);
 }
 
-/* Control the order of content */
 .left-image .image-container {
   order: 1;
 }
@@ -72,13 +70,11 @@
 .right-image .text-container {
   order: 1;
   margin: 20px;
-
 }
 .right-image .image-container {
   order: 2;
 }
 
-/* Responsive Design */
 @media (max-width: 768px) {
   .alternating-section {
     flex-direction: column;
@@ -95,6 +91,6 @@
   }
 
   .alternating-section .text-container p {
-    font-size:15px;
+    font-size: 15px;
   }
 }

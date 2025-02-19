@@ -14,7 +14,6 @@
   font-size: 48px;
 }
 
-/* Cart Layout */
 .cart-wrapper {
   display: flex;
   gap: 30px;
@@ -32,7 +31,7 @@
   padding: 20px;
   border-radius: 8px;
   height: fit-content;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 .cart-right h3 {
@@ -102,7 +101,7 @@
   object-fit: cover;
   margin-right: 15px;
   border-radius: 6px;
-  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
 }
 
 .product-info p {
@@ -123,7 +122,7 @@
   font-size: 16px;
   cursor: pointer;
   transition: background 0.3s ease;
-  font-family:sans-serif;
+  font-family: sans-serif;
 }
 
 .quantity-cell button:hover {
@@ -136,7 +135,6 @@
   font-size: 16px;
 }
 
-/* Remove button */
 .actions-cell .remove-item {
   background: transparent;
   border: none;
@@ -148,7 +146,6 @@
   width: 20px;
   height: 20px;
 }
-
 
 /* Coupon & Continue Shopping */
 .coupon-continue {
@@ -208,7 +205,6 @@
   background: #bbb;
 }
 
-/* Checkout Button */
 .checkout-button {
   display: block;
   width: 100%;
@@ -267,15 +263,14 @@
   }
 
   .cart-item-name {
-      font-size: 18px;
-    }
+    font-size: 18px;
+  }
   .cart-table td::before {
     font-weight: 600;
     width: 40%;
     content: attr(data-label);
   }
 
-  
   .product-column {
     flex-direction: column;
     align-items: flex-start;

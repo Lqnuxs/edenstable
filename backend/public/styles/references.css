@@ -1,51 +1,50 @@
 .references-page {
-    padding: 100px 20px;
-    max-width: 900px;
-    margin: 0 auto;
-    animation: fadeIn 1s ease-in-out;
+  padding: 100px 20px;
+  max-width: 900px;
+  margin: 0 auto;
+  animation: fadeIn 1s ease-in-out;
+}
+
+.references-header h1 {
+  font-size: 42px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.references-header p {
+  font-size: 18px;
+  text-align: center;
+  color: #555;
+}
+
+.references-list ul {
+  list-style-type: disc;
+  padding-left: 40px;
+}
+
+.references-list li {
+  font-size: 18px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.references-list a {
+  color: #4caf50;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.references-list a:hover {
+  text-decoration: underline;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
   }
-  
-  .references-header h1 {
-    font-size: 42px;
-    text-align: center;
-    margin-bottom: 20px;
+  to {
+    opacity: 1;
+    transform: translateY(0);
   }
-  
-  .references-header p {
-    font-size: 18px;
-    text-align: center;
-    color: #555;
-  }
-  
-  .references-list ul {
-    list-style-type: disc;
-    padding-left: 40px;
-  }
-  
-  .references-list li {
-    font-size: 18px;
-    margin-bottom: 20px;
-    color: #333;
-  }
-  
-  .references-list a {
-    color: #4caf50;
-    text-decoration: none;
-    font-weight: bold;
-  }
-  
-  .references-list a:hover {
-    text-decoration: underline;
-  }
-  
-  /* Animations */
-  @keyframes fadeIn {
-    from {
-      opacity: 0;
-      transform: translateY(20px);
-    }
-    to {
-      opacity: 1;
-      transform: translateY(0);
-    }
-  }
+}

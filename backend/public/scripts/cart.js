@@ -1,9 +1,6 @@
-// cart.js
-
-let discountPercentage = 0; // Global variable for coupon discount
+let discountPercentage = 0;
 
 export function setupCart() {
-  // Attach event listeners for Add to Cart buttons
   const addButtons = document.querySelectorAll(".add-to-cart");
   addButtons.forEach((button) => {
     button.addEventListener("click", () => {
@@ -17,7 +14,6 @@ export function setupCart() {
     });
   });
 
-  // Attach event listeners for Remove buttons
   const removeButtons = document.querySelectorAll(".remove-item");
   removeButtons.forEach((button) => {
     button.addEventListener("click", () => {
@@ -30,7 +26,6 @@ export function setupCart() {
     });
   });
 
-  // Load the cart on page load
   loadCart();
 
   // Coupon form listener
@@ -41,7 +36,6 @@ export function setupCart() {
       const couponInputField = document.getElementById("coupon");
       const couponInput = couponInputField.value.trim();
 
-      // If the input is empty, do nothing and exit early
       if (!couponInput) {
         couponInputField.value = "";
         return;
@@ -55,14 +49,11 @@ export function setupCart() {
         showNotification("Invalid coupon code.");
       }
 
-      // Clear the coupon form input field
       couponInputField.value = "";
-      // Reload cart UI to update the summary with discount applied
       loadCart();
     });
   }
 
-  // Checkout button listener
   const checkoutButton = document.getElementById("checkout-button");
   if (checkoutButton) {
     checkoutButton.addEventListener("click", () => {
@@ -119,7 +110,6 @@ function updateCartUI(cart) {
     return;
   }
 
-  // Clear previous items
   cartContainer.innerHTML = "";
 
   if (cart.length === 0) {

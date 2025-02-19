@@ -1,4 +1,3 @@
-/* Main Banner Section */
 .section-main-banner {
   position: relative;
   background: #232323;
@@ -30,20 +29,20 @@
 }
 
 @media (max-width: 768px) {
-  .main-banner-inner{
+  .main-banner-inner {
     max-width: 100%;
   }
 }
 
 @keyframes banner-img {
   0% {
-    transform: translate3d(0,0,0) rotate(0deg);
+    transform: translate3d(0, 0, 0) rotate(0deg);
   }
   50% {
-    transform: translate3d(0,0,0) rotate(1deg) scale(1.02);
+    transform: translate3d(0, 0, 0) rotate(1deg) scale(1.02);
   }
   100% {
-    transform: translate3d(0,0,0) rotate(0deg);
+    transform: translate3d(0, 0, 0) rotate(0deg);
   }
 }
 
@@ -58,13 +57,13 @@
 
 @media (max-width: 768px) {
   .box-default {
-    max-width:100%;
+    max-width: 100%;
   }
 }
 
 .box-default-title {
   font-size: 60px;
-  text-shadow: 0 4px 12px rgba(0,0,0,0.3);
+  text-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
   margin-bottom: 10px;
 }
 

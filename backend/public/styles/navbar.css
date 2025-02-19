@@ -1,12 +1,14 @@
-/* Navbar */
 .navbar {
   display: flex;
   align-items: center;
-  /* We use space-between, but we’ll split the navbar into three sections */
   justify-content: space-between;
   padding: 10px 20px;
   height: 100px;
-  background: linear-gradient(90deg, rgba(230, 230, 230, 0.4), rgba(231, 238, 232, 0.4));
+  background: linear-gradient(
+    90deg,
+    rgba(230, 230, 230, 0.4),
+    rgba(231, 238, 232, 0.4)
+  );
   position: fixed;
   top: 0;
   width: 100%;
@@ -16,13 +18,15 @@
   box-shadow: 1px 1px 40px rgba(132, 132, 132, 0.9);
 }
 
-/* When scrolling */
 .navbar.scrolled {
-  background: linear-gradient(90deg, rgba(223, 223, 223, 0.5), rgba(180, 206, 184, 0.5));
+  background: linear-gradient(
+    90deg,
+    rgba(223, 223, 223, 0.5),
+    rgba(180, 206, 184, 0.5)
+  );
   box-shadow: 10px 10px 80px rgba(230, 230, 230, 0.2);
 }
 
-/* Three main sections: nav-left, logo-container, nav-right */
 .nav-left,
 .logo-container,
 .nav-right {
@@ -31,7 +35,6 @@
   align-items: center;
 }
 
-/* Left side: Home link aligned to the left */
 .nav-left {
   justify-content: flex-start;
 }
@@ -54,7 +57,6 @@
   transform: scale(1.05);
 }
 
-/* Center: Logo is centered */
 .logo-container {
   justify-content: center;
 }
@@ -63,13 +65,11 @@
   height: 80px;
 }
 
-/* Right side: Cart + Hamburger aligned to the right */
 .nav-right {
   justify-content: flex-end;
-  gap: 20px; /* space between cart and hamburger */
+  gap: 20px;
 }
 
-/* Cart icon */
 .cart-container {
   display: flex;
   align-items: center;
@@ -81,12 +81,10 @@
   transition: transform 0.2s ease;
 }
 
-/* Hover effect on the cart if you want it */
 .cart-container:hover .cart-icon {
   transform: scale(1.1);
 }
 
-/* Hamburger Menu */
 .menu-toggle {
   background: none;
   border: none;
@@ -136,10 +134,9 @@
   transform: rotate(90deg) translateX(-8px);
 }
 
-/* Nav links hidden by default; toggled by .active */
 .nav-links {
   position: absolute;
-  top: 100px; /* just below the navbar’s height */
+  top: 100px;
   right: 20px;
   background: rgba(230, 230, 230, 0.95);
   width: 200px;
@@ -159,7 +156,6 @@
   transform: translateY(0);
 }
 
-/* Nav items inside the dropdown */
 .nav-item {
   margin: 10px 0;
 }
@@ -173,7 +169,7 @@
   padding: 10px 20px;
   box-shadow: 2px 2px 10px rgba(70, 69, 69, 0.5);
   transition: background 0.3s ease, color 0.3s ease, transform 0.3s ease;
-  display: inline-block; /* So the padding is around the text properly */
+  display: inline-block;
 }
 
 .nav-item a:hover {
@@ -182,15 +178,8 @@
   transform: scale(1.05);
 }
 
-/* Responsive Mobile */
 @media (max-width: 768px) {
-  /* Keep the same structure on mobile:
-     nav-left, logo-center, nav-right are still in one row. 
-     But the nav links are toggled by hamburger (same as desktop). */
   .navbar {
     padding: 10px;
   }
-
-  /* The position of the .nav-links stays the same, so the menu
-     toggles open/close. Adjust if you want full-screen or something else. */
 }
